@@ -4,6 +4,11 @@ services:
     env: node
     buildCommand: npm install
     startCommand: npm start
+    plan: free
+    region: frankfurt
+    autoDeploy: true
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
+      - key: PORT
+        sync: false
